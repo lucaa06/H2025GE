@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Genova 2026 // The Ultimate Coding Challenge</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23FF206E' d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm-1.8 72.8c-1.3-1.3-2.6-2.5-3.8-3.7-2.6-2.5-5.2-4.9-7.7-7.4-2.5-2.5-4.8-5-7.1-7.5-2.2-2.5-4.3-5.1-6.1-7.8-1.8-2.7-3.4-5.5-4.7-8.4-1.3-3-2.3-6.1-2.9-9.3-0.6-3.2-0.8-6.5-0.7-9.8-0.2-2.9 0.4-5.9 1.6-8.7 1.2-2.8 3-5.3 5.3-7.5 2.3-2.2 5.1-4.2 8.1-5.8 3.1-1.6 6.5-2.7 10.1-3.2 3.6-0.5 7.2-0.3 10.8 0.4 3.5 0.7 6.9 2 9.9 3.9 3 1.9 5.8 4.3 8.3 7.1 2.5 2.8 4.7 5.9 6.4 9.3 1.7 3.4 2.9 7.1 3.5 10.9 0.6 3.8 0.5 7.7-0.1 11.5-0.6 3.8-1.7 7.5-3.3 11-1.6 3.5-3.6 6.7-5.9 9.7-2.3 3-4.9 5.7-7.7 8.2-2.8 2.5-5.8 4.8-8.9 6.8-3.1 2-6.4 3.6-9.8 4.7-3.4 1.1-6.9 1.7-10.4 1.7-3.5 0-7-0.6-10.4-1.7s-6.5-2.7-9.8-4.7c-3.1-2-5.8-4.3-8.3-7.1-2.5-2.8-4.7-5.9-6.4-9.3-1.7-3.4-2.9-7.1-3.5-10.9-0.6-3.8-0.5-7.7 0.1-11.5-0.6 3.8-1.7 7.5-3.3 11-1.6 3.5-3.6 6.7-5.9 9.7-2.3 3-4.9 5.7-7.7 8.2-2.8 2.5-5.8 4.8-8.9 6.8-3.1 2-6.4 3.6-9.8 4.7-3.4 1.1-6.9 1.7-10.4 1.7-3.5 0-7-0.6-10.4-1.7z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="blob"></div>
+    <div class="noise"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="#home">
+                <svg viewBox="0 0 100 100" class="logo">
+                    <path fill="#FF206E" d="M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm-1.8 72.8c-1.3-1.3-2.6-2.5-3.8-3.7-2.6-2.5-5.2-4.9-7.7-7.4-2.5-2.5-4.8-5-7.1-7.5-2.2-2.5-4.3-5.1-6.1-7.8-1.8-2.7-3.4-5.5-4.7-8.4-1.3-3-2.3-6.1-2.9-9.3-0.6-3.2-0.8-6.5-0.7-9.8-0.2-2.9 0.4-5.9 1.6-8.7 1.2-2.8 3-5.3 5.3-7.5 2.3-2.2 5.1-4.2 8.1-5.8 3.1-1.6 6.5-2.7 10.1-3.2 3.6-0.5 7.2-0.3 10.8 0.4 3.5 0.7 6.9 2 9.9 3.9 3 1.9 5.8 4.3 8.3 7.1 2.5 2.8 4.7 5.9 6.4 9.3 1.7 3.4 2.9 7.1 3.5 10.9 0.6 3.8 0.5 7.7-0.1 11.5-0.6 3.8-1.7 7.5-3.3 11-1.6 3.5-3.6 6.7-5.9 9.7-2.3 3-4.9 5.7-7.7 8.2-2.8 2.5-5.8 4.8-8.9 6.8-3.1 2-6.4 3.6-9.8 4.7-3.4 1.1-6.9 1.7-10.4 1.7-3.5 0-7-0.6-10.4-1.7z" />
+                </svg>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sponsor" class="nav-link">Sponsor</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#collabora" class="nav-link">Collabora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1 class="main-title">
+                    <span>Hackathon</span>
+                    <span>Genova 2026</span>
+                </h1>
+                <div style="height: 3rem;"></div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-location-dot"></i> Luogo</h3>
+                        <p>Campus di GENOAES</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-hourglass-half"></i> Durata</h3>
+                        <p><span class="animated-number" data-target="48">0</span> ore di sviluppo</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-trophy"></i> Premio</h3>
+                        <p>Montepremi di <span class="animated-number" data-target="10000">0</span>euro</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><i class="fa-solid fa-users-line"></i> Partecipanti</h3>
+                        <p><span class="animated-number" data-target="250">0</span>+ menti brillanti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsor" class="content-section">
+            <h2>I Nostri Sponsor</h2>
+            <p>Grazie al supporto di questi partner, possiamo rendere questo evento indimenticabile. Unisciti a noi e scopri come le grandi aziende sostengono l'innovazione.</p>
+                <div class="sponsor-area">
+                    <div class="sponsor-grid">
+                        <div class="sponsor-logo logo-1">
+                            <img src="genoa_ventures_logo.jpeg" alt="Logo Genoa Ventures">
+                            <span>Genoa Ventures</span>
+                        </div>
+                        <div class="sponsor-logo logo-2">
+                            <img src="genoaES.svg" alt="Logo GenovaES">
+                            <span>GenovaES</span>
+                        </div>
+                        <div class="sponsor-logo logo-3">
+                            <img src="regioneLiguria.png" alt="Logo Regione Liguria">
+                            <span>Regione Liguria</span>
+                        </div>
+                        <div class="sponsor-logo logo-4">
+                            <img src="bancaCarige.png" alt="Logo ERG">
+                            <span>Banca Carige</span>
+                        </div>
+                        <div class="sponsor-logo logo-4">
+                            <img src="erg.png" alt="Logo ERG">
+                            <span>ERG</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>Perché Partecipare?</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Un <b class="bold-highlight">Hackathon</b> non è solo una competizione, ma un'esperienza immersiva dove sviluppatori, designer e innovatori si incontrano per trasformare un'idea in un prototipo funzionante in un tempo limitato. È il luogo dove la creatività incontra la tecnologia.
+                    </p>
+                    <p>
+                        Una <b class="bold-highlight">startup</b> è un'impresa nascente, spesso ad alta tecnologia, con un modello di business scalabile e orientato alla crescita. Qui potrai toccare con mano il loro mondo.
+                    </p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Network</h3>
+                        <p>Connetti con esperti, mentor e talenti per creare la tua rete di contatti professionale.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Esperienza</h3>
+                        <p>Metti alla prova le tue abilità, impara nuove tecnologie e risolvi problemi reali in un ambiente stimolante.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Nuove Porte</h3>
+                        <p>Dai visibilità al tuo talento. Un hackathon può essere il trampolino di lancio per la tua carriera o per la tua idea di business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collabora" class="content-section">
+             <h2>Diventa Partner</h2>
+             <p>Associa il tuo brand all'innovazione. Contattaci per scoprire come la tua azienda può entrare a far parte del futuro e supportare i talenti di domani.</p>
+             <a href="mailto:h2026ge@gmail.com" class="cta-button"><span>Contattaci</span></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Genoa Ventures, tutti i diritti riservati. Per problemi contattare: <a href="mailto:h2026ge@gmail.com">h2026ge@gmail.com</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:h2026ge@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
