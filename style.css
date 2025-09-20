@@ -21,6 +21,7 @@
 }
 
 html {
+    user-select:none;
     scroll-behavior: smooth;
     font-size: 16px; /* Base per rem */
 }
