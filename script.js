@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Cursore Personalizzato Ottimizzato (Versione 3.0) ---
     const cursor = document.querySelector('.custom-cursor');
-    const interactiveElements = document.querySelectorAll('a, button, .info-card, .sponsor-logo, .benefit-card');
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+    // MODIFICA QUI: Aggiunto '.supporter-item' alla lista
+const interactiveElements = document.querySelectorAll('a, button, .info-card, .sponsor-logo, .benefit-card, .supporter-item');    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
     if (!isTouchDevice) {
         let mouseX = 0, mouseY = 0;
